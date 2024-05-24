@@ -44,7 +44,7 @@ public class DynamicJson
                 .extract().response().asString();
         System.out.println("Hi");
 
-        //System.out.println("Hello"+addBookResponse);
+        System.out.println("Hello"+addBookResponse);
         JsonPath js= ReusableMethod.rawToJson(addBookResponse);
         Assert.assertEquals(js.get("Msg"),"successfully added");
     }
