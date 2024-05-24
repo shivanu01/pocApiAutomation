@@ -42,6 +42,7 @@ public class DynamicJson
                 .when().post("Library/Addbook.php")
                 .then().log().all().assertThat().statusCode(200)
                 .extract().response().asString();
+        System.out.println("Hi");
 
         //System.out.println("Hello"+addBookResponse);
         JsonPath js= ReusableMethod.rawToJson(addBookResponse);
