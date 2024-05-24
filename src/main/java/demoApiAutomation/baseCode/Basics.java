@@ -15,6 +15,7 @@ public class Basics
     {
 
 
+
         RestAssured.baseURI="https://rahulshettyacademy.com";
 
         //Posting the place
